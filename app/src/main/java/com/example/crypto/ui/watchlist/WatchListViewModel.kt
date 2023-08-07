@@ -1,4 +1,4 @@
-package com.example.crypto
+package com.example.crypto.ui.watchlist
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.example.crypto
+package com.example.crypto.ui.crypto
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,17 +6,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.crypto.R
 
-class WatchListFragment : Fragment() {
+class CryptoFragment : Fragment() {
 
-    private lateinit var viewModel: WatchListViewModel
+    private lateinit var viewModel: CryptoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProvider(this).get(WatchListViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(CryptoViewModel::class.java)
 
-        return inflater.inflate(R.layout.fragment_watch_list, container, false)
+        return inflater.inflate(R.layout.fragment_crypto, container, false)
     }
 }
